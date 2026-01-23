@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/479464c264.js" crossorigin="anonymous"></script>
+    </head>
+
+        <body>
+            <div id="header">
+                <div class="container">
+                    <nav> 
+                        <img src="images/logo2.PNG" width="140" height="60" class="logo">
+                        <ul id="sidemenu"> 
+                            <li> <a href="#header">Home</a>  </li>
+                            <li> <a href="#about">About</a>  </li>
+                            <li> <a href="#services">Services</a>  </li>
+                            <li> <a href="#portfolio">Portfolio</a>  </li>
+                             <li> <a href="#contact">Contact</a>  </li>
+                             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                        </ul> 
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    <div class="header-text">
+                        <p>CSE Undergraduate</p>
+                        <h1>Hi, I am <span>Sahad</span><br> Ibne from Chittagong</h1>
+                    </div>
+                </div>
+
+            </div>
+<!-----------------------about----------------------->
+
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                       <div class="about-col-1">
+                        <img src="images/user2.jpeg" width="500"  height="550">
+                       </div>
+                       <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <br>
+                        <p> 
+                          I am a Computer Science and Engineering student with a strong passion for coding and web development. I see programming as more than just writing code—it is a way of turning ideas into meaningful digital experiences.
+<br>
+I enjoy working with HTML and CSS, where creativity meets structure. Building clean, responsive, and user-friendly interfaces is something I truly love, and I am constantly exploring better ways to improve my skills in web development.
+<br>
+I have worked on multiple projects, including the UNESCO Hackathon on Media and Information Literacy, where I collaborated with a team of five members. This experience helped me develop teamwork, problem-solving skills, and the confidence to work in real-world project environments.
+<br>
+Outside of coding, I enjoy reading books, traveling, and discovering new places.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        </div>
+                     
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                                <li><span>Web developement</span><br>web app developement</li>
+                                <li><span>App developement</span><br>Building Android/ios apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>CSE Student & Learner</span><br>Practicing through academic and personal projects</li>
+                                <li><span>Beginner Web Development Projects</span><br>Created basic websites using HTML and CSS</li>
+                                <li><span>Programming Practice</span><br>Learning how to write clean and efficient code</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2015-2021</span><br>Nasirabad gov't high school</li>
+                                <li><span>2022-2023</span><br>Government City college</li>
+                                <li><span>2024-Continue</span><br>International Islamic University Chittagong</li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+ <!---------------------------services--------------------------------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div> 
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> I create clean, responsive, and visually appealing websites using modern design principles. I focus on layout, color balance, and user experiences.
+</p>
+                    <a href="#">Learn more!</a>
+            </div>
+             <div> 
+                <i class="fa-solid fa-crop"></i>
+                <h2>Coding</h2>
+                <p> I enjoy solving problems through code and building functional web applications. I write clean, structured, and efficient code, focusing on logic & performance.</p>
+                    <a href="#">Learn more!</a>
+            </div>
+             <div> 
+                <i class="fa-brands fa-app-store"></i>
+                <h2>UI/UX</h2>
+                <p> I design user-friendly interfaces with a strong focus on usability and simplicity. My goal is to create intuitive experiences that feel natural, engaging, and easy to navigate for users.
+</p>
+                    <a href="#">Learn more!</a>
+            </div>
+        
+        </div>
+    </div>
+ </div>
+ <!---------------------------portfolio----------------------------->
+      <div id="portfolio">
+        <div class="container">
+              <h1 class="sub-title">My work</h1>
+              <div class="work-list">
+                <div class="work">
+                    <img src="images/unesco2.png">
+                    <div class="layer">
+                        <h3>Unesco Youth Hackathon</h3>
+                        <p>This was MIL week, the project was to build an App, which can help to secure data in the time of internet shutdown.
+                        </p>
+                        <a href="images/unesco.pdf"> <i class="fa-solid fa-link"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/app.png">
+                      <div class="layer">
+                        <h3>OUTAGESYNC PLATFORM</h3>
+                        <p>An offline-first, blockchain-verified platform that turns every smartphone into a truth preservation device during internet blackout.
+                            Download it!
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-link"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                      <div class="layer">
+                        <h3>Online shopping App </h3>
+                        <p>The app connects you to the seller around the world.
+                            Download it!
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-link"></i></a>
+
+                    </div>
+                </div>
+              </div>
+              <a href="#" class="btn">See more! </a>
+
+        </div>
+      </div>  
+<!-----------------------------------contact--------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"> 
+                <h1 class="sub-title">Contact me </h1>
+                <p><i class="fa-solid fa-at"></i>binsahad91@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>01886508424</p>
+                 <p><i class="fa-solid fa-location-arrow"></i></i>Shaymoli r/a, Panchlaish, Chittagong</p>
+                <div class="social-icons"> 
+                    <a href="https://www.facebook.com/share/1EtAXxtNmm/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/sahadbin20?s=21"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/s.ahad_w?igsh=cHQyZXpjc2F6d3V4&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sahad-bin-99491b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sahad-iiuc"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @sahad. Made with basic HTML, CSS & a little bit JavaScript</p>
+    </div>
+</div>
+ 
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                  var tabcontents = document.getElementsByClassName("tab-contents");
+                  function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                      for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+        
+                  }
+            </script>
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu(){
+                    sidemenu.style.right = "0";
+                }
+                function closemenu(){
+                    sidemenu.style.right = "-200px";
+                }
+            </script>
+
+        </body>
+
+</html>
