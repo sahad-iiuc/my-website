@@ -9,7 +9,7 @@ html{
 }
 body{
     background: #080808;
-    color: #000000;
+    color: #ffffff;
 }
 #header{
 width: 100%;
@@ -30,6 +30,7 @@ nav{
 }
 .logoo{
     width: 140px;
+    color: #ffffff;
 }
 nav ul li{
     display: inline-block;
@@ -37,7 +38,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 19px;
     position: relative;
