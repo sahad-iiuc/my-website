@@ -1,223 +1,590 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/479464c264.js" crossorigin="anonymous"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahad Ibne - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/479464c264.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-        <body>
-            <div id="header">
-                <div class="container">
-                    <nav> 
-                        <img src="bg-logo.png" width="140" height="60" class="logo">
-                        <ul id="sidemenu"> 
-                            <li> <a href="#header">Home</a>  </li>
-                            <li> <a href="#about">About</a>  </li>
-                            <li> <a href="#services">Services</a>  </li>
-                            <li> <a href="#portfolio">Portfolio</a>  </li>
-                             <li> <a href="#contact">Contact</a>  </li>
-                             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                        </ul> 
-                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                    </nav>
-                    <div class="header-text">
-                        <p>CSE Undergraduate</p>
-                        <h1>Hi, I am <span>Sahad</span><br> Ibne from Chittagong</h1>
-                    </div>
-                </div>
-
-            </div>
-<!-----------------------about----------------------->
-
-            <div id="about">
-                <div class="container">
-                    <div class="row">
-                       <div class="about-col-1">
-                        <img src="sahad-ibne.jpeg" width="500"  height="550">
-                       </div>
-                       <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <br>
-                        <p> 
-                          I am a Computer Science and Engineering student with a strong passion for coding and web development. I see programming as more than just writing code—it is a way of turning ideas into meaningful digital experiences.
-<br>
-I enjoy working with HTML and CSS, where creativity meets structure. Building clean, responsive, and user-friendly interfaces is something I truly love, and I am constantly exploring better ways to improve my skills in web development.
-<br>
-I have worked on multiple projects, including the UNESCO Hackathon on Media and Information Literacy, where I collaborated with a team of five members. This experience helped me develop teamwork, problem-solving skills, and the confidence to work in real-world project environments.
-<br>
-Outside of coding, I enjoy reading books, traveling, and discovering new places.
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience </p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-
-                        </div>
-                     
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                                <li><span>Web developement</span><br>web app developement</li>
-                                <li><span>App developement</span><br>Building Android/ios apps</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>CSE Student & Learner</span><br>Practicing through academic and personal projects</li>
-                                <li><span>Beginner Web Development Projects</span><br>Created basic websites using HTML and CSS</li>
-                                <li><span>Programming Practice</span><br>Learning how to write clean and efficient code</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2015-2021</span><br>Nasirabad gov't high school</li>
-                                <li><span>2022-2023</span><br>Government City college</li>
-                                <li><span>2024-Continue</span><br>International Islamic University Chittagong</li>
-                            </ul>
-                        </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
- <!---------------------------services--------------------------------->
- <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div> 
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p> I create clean, responsive, and visually appealing websites using modern design principles. I focus on layout, color balance, and user experiences.
-</p>
-                    <a href="#">Learn more!</a>
-            </div>
-             <div> 
-                <i class="fa-solid fa-crop"></i>
-                <h2>Coding</h2>
-                <p> I enjoy solving problems through code and building functional web applications. I write clean, structured, and efficient code, focusing on logic & performance.</p>
-                    <a href="#">Learn more!</a>
-            </div>
-             <div> 
-                <i class="fa-brands fa-app-store"></i>
-                <h2>UI/UX</h2>
-                <p> I design user-friendly interfaces with a strong focus on usability and simplicity. My goal is to create intuitive experiences that feel natural, engaging, and easy to navigate for users.
-</p>
-                    <a href="#">Learn more!</a>
-            </div>
-        
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="bg-logo.png"
+            width="140"
+            height="60"
+            class="logo"
+            alt="Logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>CSE Undergraduate & Developer</p>
+          <h1>
+            Hi, I am <span>Sahad</span><br />
+            Ibne from Chittagong
+          </h1>
+          <div class="header-btns">
+            <a href="#portfolio" class="btn btn2">View My Work</a>
+            <a href="Sahad_cv.pdf" download class="btn btn-outline"
+              >Download CV</a
+            >
+          </div>
         </div>
+      </div>
     </div>
- </div>
- <!---------------------------portfolio----------------------------->
-      <div id="portfolio">
-        <div class="container">
-              <h1 class="sub-title">My work</h1>
-              <div class="work-list">
-                <div class="work">
-                    <img src="unesco2.png">
-                    <div class="layer">
-                        <h3>Unesco Youth Hackathon</h3>
-                        <p>This was MIL week, the project was to build an App, which can help to secure data in the time of internet shutdown.
-                        </p>
-                        <a href="unesco.pdf"> <i class="fa-solid fa-link"></i></a>
-
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="app.png">
-                      <div class="layer">
-                        <h3>OUTAGESYNC PLATFORM</h3>
-                        <p>An offline-first, blockchain-verified platform that turns every smartphone into a truth preservation device during internet blackout.
-                            Download it!
-                        </p>
-                        <a href="#"> <i class="fa-solid fa-link"></i></a>
-
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="work-3.png">
-                      <div class="layer">
-                        <h3>Online shopping App </h3>
-                        <p>The app connects you to the seller around the world.
-                            Download it!
-                        </p>
-                        <a href="https://assignment-6-bay-zeta.vercel.app/"> <i class="fa-solid fa-link"></i></a>
-
-                    </div>
-                </div>
-              </div>
-              <a href="#" class="btn">See more! </a>
-
-        </div>
-      </div>  
-<!-----------------------------------contact--------------------------------->
-<div id="contact">
+   <!-----------------------about----------------------->
+<div id="about">
     <div class="container">
         <div class="row">
-            <div class="contact-left"> 
-                <h1 class="sub-title">Contact me </h1>
-                <p><i class="fa-solid fa-at"></i>binsahad91@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>01886508424</p>
-                 <p><i class="fa-solid fa-location-arrow"></i></i>Shaymoli r/a, Panchlaish, Chittagong</p>
-                <div class="social-icons"> 
-                    <a href="https://www.facebook.com/share/1EtAXxtNmm/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://x.com/sahadbin20?s=21"><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href="https://www.instagram.com/s.ahad_w?igsh=cHQyZXpjc2F6d3V4&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/sahad-bin-99491b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/sahad-ibne"><i class="fa-brands fa-github"></i></a>
+           <div class="about-col-1">
+            <div class="about-img-box">
+                <img src="sahad-ibne.jpeg" alt="Sahad Ibne">
+            </div>
+           </div>
+           <div class="about-col-2">
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p class="about-desc"> 
+              I am a Computer Science and Engineering student with a strong passion for coding and web development. I see programming as more than just writing code—it is a way of turning ideas into meaningful digital experiences.
+            </p>
+            <p class="about-desc">
+              I enjoy working with modern web technologies, where creativity meets structure. Building clean, responsive, and user-friendly interfaces is something I truly love, and I am constantly exploring better ways to improve my skills in full-stack development.
+            </p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+         
+            <div class="tab-content-wrapper">
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Development</span><br>Building responsive web apps with React & Tailwind</li>
+                        <li><span>Problem Solving</span><br>Practicing algorithmic thinking and coding</li>
+                        <li><span>UI/UX Design</span><br>Designing intuitive user interfaces & layouts</li>
+                    </ul>
                 </div>
-                <a href="Sahad_cv.pdf" download class="btn btn2">Download CV</a>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Hackathons & Projects</span><br>UNESCO Youth Hackathon participant and web project creator</li>
+                        <li><span>Full-Stack Learning</span><br>Building modern web apps using Next.js, React, and databases</li>
+                        <li><span>Community & Leadership</span><br>Active involvement in tech and volunteer initiatives</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2015-2021</span><br>Nasirabad Gov't High School</li>
+                        <li><span>2022-2023</span><br>Government City College</li>
+                        <li><span>2024-Continue</span><br>International Islamic University Chittagong (CSE)</li>
+                    </ul>
+                </div>
             </div>
-            <div class="contact-right">
-                <form  action="https://formspree.io/f/mrepopqo"
-                     method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message" ></textarea>
-                    <button type="submit" class="btn btn2">Submit!</button>
-                </form>
-            </div>
+           </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright @sahad. Made with basic HTML, CSS & a little bit JavaScript</p>
-    </div>
 </div>
- 
-            <script>
-                var tablinks = document.getElementsByClassName("tab-links");
-                  var tabcontents = document.getElementsByClassName("tab-contents");
-                  function opentab(tabname){
-                    for(tablink of tablinks){
-                        tablink.classList.remove("active-link");
-                    }
-                      for(tabcontent of tabcontents){
-                        tabcontent.classList.remove("active-tab");
-                    }
-                    event.currentTarget.classList.add("active-link");
-                    document.getElementById(tabname).classList.add("active-tab");
-        
-                  }
-            </script>
-            <script>
-                var sidemenu = document.getElementById("sidemenu");
 
-                function openmenu(){
-                    sidemenu.style.right = "0";
-                }
-                function closemenu(){
-                    sidemenu.style.right = "-200px";
-                }
-            </script>
+    <!-------------------------------skills------------------------------->
+    <section id="skills-section">
+      <div class="container">
+        <h1 class="sub-title">My <span>Skills</span></h1>
+        <p class="skills-intro">
+          The technologies, libraries, and developer tools I use to build
+          responsive web applications.
+        </p>
+        <div
+          class="skill-filters"
+          role="group"
+          aria-label="Filter skills by category"
+        >
+          <button
+            class="skill-filter active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All Skills
+          </button>
+          <button
+            class="skill-filter"
+            type="button"
+            data-filter="frontend"
+            aria-pressed="false"
+          >
+            Frontend
+          </button>
+          <button
+            class="skill-filter"
+            type="button"
+            data-filter="backend"
+            aria-pressed="false"
+          >
+            Backend &amp; DB
+          </button>
+          <button
+            class="skill-filter"
+            type="button"
+            data-filter="tools"
+            aria-pressed="false"
+          >
+            Tools &amp; Deploy
+          </button>
+        </div>
+        <div class="skills-list">
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-icon react-icon"
+                ><i class="fa-brands fa-react" aria-hidden="true"></i></span
+              ><span class="skill-level">Learning</span>
+            </div>
+            <h2>React.js</h2>
+            <p>
+              Components, props, hooks, and building interactive interfaces.
+            </p>
+            <span class="skill-category">Frontend</span>
+          </article>
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-icon js-icon"
+                ><i class="fa-brands fa-js" aria-hidden="true"></i></span
+              ><span class="skill-level">Practicing</span>
+            </div>
+            <h2>JavaScript (ES6+)</h2>
+            <p>Modern syntax, DOM, arrays, and asynchronous basics.</p>
+            <span class="skill-category">Frontend</span>
+          </article>
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-icon tailwind-icon"
+                ><i class="fa-solid fa-wind" aria-hidden="true"></i></span
+              ><span class="skill-level">Learning</span>
+            </div>
+            <h2>Tailwind CSS</h2>
+            <p>Utility-first styling for responsive layouts and interfaces.</p>
+            <span class="skill-category">Frontend</span>
+          </article>
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-icon html-icon"
+                ><i class="fa-brands fa-html5" aria-hidden="true"></i></span
+              ><span class="skill-level">Practicing</span>
+            </div>
+            <h2>HTML5 &amp; Semantics</h2>
+            <p>Accessible page structure and semantic HTML elements.</p>
+            <span class="skill-category">Frontend</span>
+          </article>
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-icon css-icon"
+                ><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></span
+              ><span class="skill-level">Practicing</span>
+            </div>
+            <h2>CSS3 &amp; Layouts</h2>
+            <p>Flexbox, CSS Grid, transitions, and responsive design.</p>
+            <span class="skill-category">Frontend</span>
+          </article>
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-icon bootstrap-icon"
+                ><i class="fa-brands fa-bootstrap" aria-hidden="true"></i></span
+              ><span class="skill-level">Learning</span>
+            </div>
+            <h2>Bootstrap</h2>
+            <p>Responsive grid layouts and reusable interface components.</p>
+            <span class="skill-category">Frontend</span>
+          </article>
+          <article class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <span class="skill-icon node-icon"
+                ><i class="fa-brands fa-node-js" aria-hidden="true"></i></span
+              ><span class="skill-level">Learning</span>
+            </div>
+            <h2>Node.js</h2>
+            <p>Getting started with server-side JavaScript and npm.</p>
+            <span class="skill-category">Backend</span>
+          </article>
+          <article class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <span class="skill-icon express-icon"
+                ><i class="fa-solid fa-server" aria-hidden="true"></i></span
+              ><span class="skill-level">Learning</span>
+            </div>
+            <h2>Express.js</h2>
+            <p>Learning routes, middleware, and REST API fundamentals.</p>
+            <span class="skill-category">Backend</span>
+          </article>
+          <article class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <span class="skill-icon mongo-icon"
+                ><i class="fa-solid fa-leaf" aria-hidden="true"></i></span
+              ><span class="skill-level">Exploring</span>
+            </div>
+            <h2>MongoDB</h2>
+            <p>Exploring document databases and CRUD operations.</p>
+            <span class="skill-category">Backend &amp; DB</span>
+          </article>
+          <article class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <span class="skill-icon firebase-icon"
+                ><i class="fa-solid fa-fire" aria-hidden="true"></i></span
+              ><span class="skill-level">Exploring</span>
+            </div>
+            <h2>Firebase</h2>
+            <p>Exploring authentication, hosting, and cloud data tools.</p>
+            <span class="skill-category">Backend &amp; DB</span>
+          </article>
+          <article class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <span class="skill-icon git-icon"
+                ><i class="fa-brands fa-git-alt" aria-hidden="true"></i></span
+              ><span class="skill-level">Practicing</span>
+            </div>
+            <h2>Git &amp; GitHub</h2>
+            <p>Version control, repositories, and collaborative workflows.</p>
+            <span class="skill-category">Tools</span>
+          </article>
+          <article class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <span class="skill-icon vite-icon"
+                ><i class="fa-solid fa-bolt" aria-hidden="true"></i></span
+              ><span class="skill-level">Learning</span>
+            </div>
+            <h2>Vite</h2>
+            <p>Using a modern development server and frontend build tool.</p>
+            <span class="skill-category">Tools</span>
+          </article>
+          <article class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <span class="skill-icon deploy-icon"
+                ><i
+                  class="fa-solid fa-cloud-arrow-up"
+                  aria-hidden="true"
+                ></i></span
+              ><span class="skill-level">Exploring</span>
+            </div>
+            <h2>Web Deployment</h2>
+            <p>Publishing websites and learning deployment workflows.</p>
+            <span class="skill-category">Tools &amp; Deploy</span>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        </body>
+    <!---------------------------services--------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I build clean, responsive, and functional web applications using
+              modern tools like React, Tailwind, and JavaScript with a focus on
+              performance.
+            </p>
+            <a href="#contact">Let's talk</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Problem Solving</h2>
+            <p>
+              I enjoy solving algorithmic challenges, writing structured and
+              efficient code, and expanding my knowledge of computer science
+              concepts.
+            </p>
+            <a href="#contact">Let's talk</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-figma"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I design user-friendly interfaces with a strong focus on
+              usability, layout structure, and intuitive user experiences.
+            </p>
+            <a href="#contact">Let's talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!---------------------------portfolio----------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
 
+                      <article class="work" tabindex="0">
+            <img src="work-3.png" alt="FITLOG App project preview" />
+            <div class="layer">
+              <h3>FITLOG Workout Tracker</h3>
+              <p>
+                A full-stack workout tracking web app with custom exercise plans
+                and mobile responsiveness.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/sahad-ibne/Assignment-6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                  Repo</a
+                >
+                <a
+                  class="project-link"
+                  href="https://assignment-6-bay-zeta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-globe" aria-hidden="true"></i> Live
+                  Project</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="work" tabindex="0">
+            <img src="work-4.png" alt="BazarDor project preview" />
+            <div class="layer">
+              <h3>BazarDor Price Tracker</h3>
+              <p>
+                Product price comparison platform with live price tracking,
+                category filters, and user authentication.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/sahad-ibne/bazar-dor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                  Repo</a
+                >
+                <a
+                  class="project-link"
+                  href="https://bazar-dor-u2m1.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-globe" aria-hidden="true"></i> Live
+                  Project</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="work" tabindex="0">
+            <img src="work-5.png" alt="BazarDor project preview" />
+            <div class="layer">
+              <h3>Simple React Project</h3>
+              <p>
+                A simple React application with basic components and state management.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/sahad-ibne/assignment-5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                  Repo</a
+                >
+                <a
+                  class="project-link"
+                  href="https://shimmering-cascaron-ba704d.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-globe" aria-hidden="true"></i> Live
+                  Project</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="work" tabindex="0">
+            <img
+              src="unesco2.png"
+              alt="UNESCO Youth Hackathon project preview"
+            />
+            <div class="layer">
+              <h3>UNESCO Youth Hackathon</h3>
+              <p>
+                A team-built app concept to help protect and preserve
+                information during internet shutdowns.
+              </p>
+              <div class="project-links">
+                <a class="project-link" href="unesco.pdf" target="_blank"
+                  ><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                  Project PDF</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="work" tabindex="0">
+            <img src="app.png" alt="OutageSync project preview" />
+            <div class="layer">
+              <h3>OutageSync Platform</h3>
+              <p>
+                An offline-first platform concept for preserving and verifying
+                information during internet blackouts.
+              </p>
+              <div class="project-links">
+                <span class="project-link unavailable"
+                  ><i class="fa-solid fa-code" aria-hidden="true"></i> Concept
+                  App</span
+                >
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <a
+          href="https://github.com/sahad-ibne"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          >More on GitHub</a
+        >
+      </div>
+    </div>
+
+    <!-----------------------------------contact--------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-at"></i>binsahad91@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>01886508424</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Shaymoli r/a, Panchlaish,
+              Chittagong
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/share/1EtAXxtNmm/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://x.com/sahadbin20?s=21"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/s.ahad_w?igsh=cHQyZXpjc2F6d3V4&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sahad-bin-99491b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/sahad-ibne"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="Sahad_cv.pdf"
+              download
+              class="btn btn2"
+              style="margin-top: 30px"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://formspree.io/f/mrepopqo" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Sahad Ibne. Built with passion & modern web
+          technologies.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const skillFilters = document.querySelectorAll(".skill-filter");
+      const skillCards = document.querySelectorAll(".skill-card");
+
+      skillFilters.forEach((filter) => {
+        filter.addEventListener("click", () => {
+          const category = filter.dataset.filter;
+
+          skillFilters.forEach((button) => {
+            const isActive = button === filter;
+            button.classList.toggle("active", isActive);
+            button.setAttribute("aria-pressed", isActive);
+          });
+
+          skillCards.forEach((card) => {
+            card.hidden =
+              category !== "all" && card.dataset.category !== category;
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
-
-
-
